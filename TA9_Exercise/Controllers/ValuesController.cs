@@ -13,7 +13,7 @@ namespace TA9_Exercise.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "Hello Developer" };
+            return new string[] { "Hello Developer !" };
         }
 
         // GET api/values/5
