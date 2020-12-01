@@ -23,8 +23,13 @@ stages:
   displayName: CD Stage
   jobs:
     - deployment: deploy
+      displayName: Deploy
       environment: dev
-      
+      strategy:
+        runOnce:
+          deploy:
+            steps:
+            - script: echo Deploy
 
 variables:
   buildConfiguration: 'Debug'
