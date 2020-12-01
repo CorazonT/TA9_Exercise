@@ -24,6 +24,7 @@ stages:
   jobs:
     - deployment: deploy
       environment: dev
+      
 
 variables:
-  buildConfiguration: 'Release'
+  buildConfiguration: 'Debug'
