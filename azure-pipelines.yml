@@ -23,7 +23,7 @@ stages:
   displayName: CD Stage
   jobs:
     - deployment: deploy
-      environment: staging
+      environment: dev
 
 variables:
   buildConfiguration: 'Release'
