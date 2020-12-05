@@ -25,12 +25,10 @@ steps:
     command: 'publish'
     publishWebProjects: true
 
-- task: AzureRmWebAppDeployment@4
+- task: AzureWebApp@1
   inputs:
-    ConnectionType: 'AzureRM'
     azureSubscription: 'Test Sub(8f73b845-2124-407c-a852-ed49ea183ecc)'
-    appType: 'webApp'
-    WebAppName: 'TA9Exercise'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
-    enableCustomDeployment: true
-    DeploymentType: 'webDeploy'
+    appType: 'webAppLinux'
+    appName: 'Ta9_exercise'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    runtimeStack: 'DOTNETCORE|3.1'
