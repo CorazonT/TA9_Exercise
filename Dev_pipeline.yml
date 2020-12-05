@@ -29,6 +29,6 @@ steps:
   inputs:
     azureSubscription: 'Test Sub(8f73b845-2124-407c-a852-ed49ea183ecc)'
     appType: 'webAppLinux'
-    appName: 'Ta9_exercise'
+    appName: 'TA9_Exercise'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     runtimeStack: 'DOTNETCORE|3.1'
